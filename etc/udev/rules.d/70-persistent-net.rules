@@ -1,0 +1,4 @@
+# This is so that when re-ordering USB devices, they still come up the same way
+# Use `lsusb` to fetch these
+SUBSYSTEM=="net", ACTION=="add", ATTRS{idVendor}=="<VID>", ATTRS{idProduct}=="<PID>", NAME="wifi_ext"
+SUBSYSTEM=="net", ACTION=="add", ATTRS{idVendor}=="<VID>", ATTRS{idProduct}=="<PID>", NAME="wifi_int"
