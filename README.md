@@ -6,10 +6,10 @@ Reboot required because NetworkManager will still be hogging port 53
 
 Required services to start:
 
-wpa_supplicant.service
-dhcpcd.service
-hostapd.service
-dnsmasq.service
+ - wpa_supplicant.service
+ - dhcpcd.service
+ - hostapd.service
+ - dnsmasq.service
 
 This configuration assumes you want to connect via DHCP
 for the external network on a USB device while hosting
