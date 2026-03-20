@@ -1,1 +1,1 @@
-# usb-wifi-router
+# USB Wi-Fi Router for SystemD
