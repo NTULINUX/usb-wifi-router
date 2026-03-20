@@ -4,6 +4,8 @@ NetworkManager must be stopped and disabled
 
 Reboot required because NetworkManager will still be hogging port 53
 
+For Debian, nft rules go in: `/etc/nftables.conf`
+
 Packages required:
 
  - wpa_supplicant
@@ -17,6 +19,7 @@ Packages to remove:
 
  - firewalld
  - systemd-resolved
+ - iptables (iptables-utils and iptables-legacy for Fedora)
 
 Required services to start:
 
