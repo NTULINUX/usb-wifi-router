@@ -4,6 +4,20 @@ NetworkManager must be stopped and disabled
 
 Reboot required because NetworkManager will still be hogging port 53
 
+Packages required:
+
+ - wpa_supplicant
+ - dhcpcd
+ - hostapd
+ - dnsmasq
+ - nftables (nftables-services for Fedora)
+ - openresolv
+
+Packages to remove:
+
+ - firewalld
+ - systemd-resolved
+
 Required services to start:
 
  - wpa_supplicant.service
